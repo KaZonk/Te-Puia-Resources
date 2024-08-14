@@ -1,0 +1,10 @@
+
+.nav-menu{
+    margin-top:50px;
+}
+.hero-image{
+    background-image: url(Main_Image.jpg); 
+    height:  1280px;
+    width: 854px;
+    background-size: cover;
+}
