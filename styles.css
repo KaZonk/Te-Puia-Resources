@@ -1,4 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+.top-bar {
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color:rgba(95, 95, 95, 1)
+  }
+  
+  .icon { grid-area: 1 / 2 / 2 / 4; 
+    font-family: "DM Serif Text", serif;
+    text-align: center;
+    font-size: 150%;
+    color:#FFFFFF;
+  }
+  .div2 { grid-area: 1 / 5 / 2 / 6; }
+  .div3 { grid-area: 1 / 7 / 2 / 8; }
+  .div4 { grid-area: 1 / 9 / 2 / 10; }
+  .div5 { grid-area: 1 / 11 / 2 / 12; }
+  .div6 { grid-area: 1 / 16 / 2 / 17; }
+  .div7 { grid-area: 1 / 18 / 2 / 19; }
+  .div8 { grid-area: 1 / 20 / 2 / 21; }
+  .div9 { grid-area: 1 / 22 / 2 / 23; }
+  .div10 { grid-area: 1 / 24 / 2 / 25; }
+  .div11 { grid-area: 1 / 26 / 2 / 27; }
+  .div12 { grid-area: 1 / 28 / 2 / 29; }
+  .div2, .div3 , .div4 , .div5 , .div6 , .div7, .div8, .div9, .div10, .div11, .div12{
+    font-family: "DM Serif Text", serif;
+    text-align: center;
+    font-size: 125%;
+    color:#FFFFFF;
+  }
 .hero-image{
     /* The linear gradient darken the photo so it's easier to read*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Main_Image.jpg); 
@@ -6,16 +39,46 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-right: 20px;
+    margin-left:20px;
 }
 
 .hero-text{
     font-family: "Kanit", sans-serif;
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 700;
   font-style: normal;
   text-align: center;
+  top:50%;
+  left:50%;
   position:absolute;
-  bottom: 50%;
-  right: 50%;
   color: rgb(205, 106, 70);
+}
+
+.two-column {
+  display: grid;
+  margin-left: 40px;
+  margin-right:40px;
+  grid-template-columns: auto auto auto;
+  background-color: #FFFFFF;
+  column-gap: 80px;
+  row-gap: 40px;
+  padding: 10px;
+}
+
+.thermal-valley, .mud-pool ,.pohutu-geyser,.weaving-school,.carving-school,.wooden-club {
+  background-color: rgba(217, 217, 217, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-image{
+  height:50px;
+  width:50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 100%;
 }
