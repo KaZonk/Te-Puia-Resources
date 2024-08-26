@@ -32,27 +32,32 @@
     font-size: 125%;
     color:#FFFFFF;
   }
-.hero-image{
-    /* The linear gradient darken the photo so it's easier to read*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Main_Image.jpg); 
-    height:  800px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 20px;
-    margin-left:20px;
+
+
+.hero-container {
+  position: relative;
+  display: inline-block;
+  
 }
 
-.hero-text{
-    font-family: "Kanit", sans-serif;
+.hero-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: rgb(205, 106, 70); 
+  padding: 10px 20px; 
+  text-align: center;
+  font-family: "Kanit", sans-serif;
   font-size: 60px;
   font-weight: 700;
   font-style: normal;
-  text-align: center;
-  top:50%;
-  left:50%;
-  position:absolute;
-  color: rgb(205, 106, 70);
 }
 
 .two-column {
@@ -81,4 +86,20 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 100%;
+}
+
+.discover{
+  display:grid;
+  grid-template-columns: auto;
+  padding: 10px;
+}
+
+.discover-item {
+  background-color: rgb(128, 42, 42);
+  border: 1px solid rgb(0, 0, 0);
+  color:rgb(225, 225, 225);
+  border-radius: 30px;
+  padding: 20px;
+  font-size: 20px;
+  text-align: left;
 }
