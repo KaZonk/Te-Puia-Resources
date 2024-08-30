@@ -29,7 +29,7 @@
   .div2, .div3 , .div4 , .div5 , .div6 , .div7, .div8, .div9, .div10, .div11, .div12{
     font-family: "DM Serif Text", serif;
     text-align: center;
-    font-size: 125%;
+    font-size: 115%;
     color:#FFFFFF;
   }
 
@@ -41,7 +41,7 @@
 
 .hero-container img {
   display: block;
-  width: 100%;
+  width: 1920px;
   height: auto;
 }
 
@@ -59,7 +59,7 @@
   font-style: normal;
 }
 
-.two-column {
+.three-column {
   display: grid;
   margin-left: 40px;
   margin-right:40px;
@@ -122,3 +122,23 @@
 
   }
   .copyright { grid-area: 6 / 3 / 7 / 9; }
+
+  .two-column {
+    display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+    }
+    
+  .column1 { grid-area: 1 / 2 / 3 / 4; }
+  .column2 { grid-area: 1 / 5 / 3 / 7; }
+
+  .column-image{
+    aspect-ratio: 1 / 1;
+    width: 400px;
+    height: auto;
+    text-align: center;
+  }
