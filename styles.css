@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/* global fonts */
+*{font-family: "Open Sans", sans-serif;}
+/* ------------------------------------------------------------------------- */
 
-*{
-  font-family: "Open Sans", sans-serif;
+body {
+  margin: 0;
 }
+/* Top bar an it's grid */
 .top-bar {
   display: grid;
   grid-template-columns: repeat(30, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  background-color:rgba(95, 95, 95, 1);
+  background-color: rgba(95, 95, 95, 0.1)
   }
-  
-  .icon { grid-area: 1 / 2 / 2 / 4; 
-
-    text-align: center;
-    font-size: 150%;
-    color:#FFFFFF;
-  }
+  /* top bar button */
+  .icon { grid-area: 1 / 2 / 2 / 4; }
   .div2 { grid-area: 1 / 5 / 2 / 6; }
   .div3 { grid-area: 1 / 7 / 2 / 8; }
   .div4 { grid-area: 1 / 9 / 2 / 10; }
@@ -29,13 +29,19 @@
   .div10 { grid-area: 1 / 24 / 2 / 25; }
   .div11 { grid-area: 1 / 26 / 2 / 27; }
   .div12 { grid-area: 1 / 28 / 2 / 29; }
-  .div2, .div3 , .div4 , .div5 , .div6 , .div7, .div8, .div9, .div10, .div11, .div12{
+  .icon , .div2, .div3 , .div4 , .div5 , .div6 , .div7, .div8, .div9, .div10, .div11, .div12{
     text-align: center;
-    font-size: 115%;
-    color:#FFFFFF;
+    font-size: 120%;
+    border: 2px double rgb(255, 255 , 255);
+
   }
-
-
+  .nav-text{
+    padding-top:0px;
+    padding-bottom:0px;
+    color:black;
+  }
+/* ------------------------------------------------------------------------- */
+/* Hero stuff */
 .hero-container {
   position: relative;
   display: inline-block;
@@ -46,24 +52,27 @@
   width: 1920px;
   height: auto;
 }
-
+/* hero text use a different font than the rest of the website */
 .hero-text {
   position: absolute;
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
   /*I used top, left and transform:translate() to allign the text to the absolute center */
-  color: rgb(205, 106, 70); 
+  color: #dee4dd;
+  text-shadow: -1px -1px 3px rgb(118, 47, 37), 1px -1px 3px rgb(118, 47, 37), 1px 1px 3px rgb(118, 47, 37),
+  1px 1px 3px rgb(118, 47, 37); 
   padding: 10px 20px; 
   text-align: center;
-   /*this font is imported*/
-  font-size: 60px;
-  font-weight: 700;
+  font-size: 80px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
 }
 
-
-
+/* ------------------------------------------------------------------------- */
+/* three column */
 .three-column {
   display: grid;
   margin-left: 40px;
@@ -74,11 +83,7 @@
   row-gap: 40px;
   padding: 10px;
 }
-
-h3 {
-  color:  rgb(128, 42, 42);
-}
-
+/* three column box */
 .thermal-valley, .mud-pool ,.pohutu-geyser,.weaving-school,.carving-school,.wooden-club {
   background-color: rgba(217, 217, 217, 0.8);
   border: 1px solid rgba(0, 0, 0, 0);
@@ -86,8 +91,12 @@ h3 {
   font-size: 30px;
   text-align: center;
 }
-
-.grid-image{
+/*three column's box text  */
+.box-text {
+  color:  rgb(128, 42, 42);
+}
+/* boxs'image */
+.box-image{
   height:50px;
   width:50px;
   background-position: center;
@@ -95,6 +104,28 @@ h3 {
   background-repeat: no-repeat;
   border-radius: 100%;
 }
+/* ------------------------------------------------------------------------- */
+/* two column's grid */
+.two-column {
+  display: grid;
+grid-template-columns: repeat(7, 1fr);
+margin-top: 50px;
+margin-bottom: 50px;
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+  }
+  /* column within two-column */
+.column1 { grid-area: 1 / 2 / 3 / 4; }
+.column2 { grid-area: 1 / 5 / 3 / 7; }
+/* image inside column */
+.column-image{
+  aspect-ratio: 1 / 1;
+  width: 400px;
+  height: auto;
+  text-align: center;
+}
+/* ------------------------------------------------------------------------- */
 
 .discover{
   display:grid;
@@ -112,7 +143,8 @@ h3 {
   text-align: left;
   line-height: 30px;
 }
-
+/* ------------------------------------------------------------------------- */
+/* footer grid */
 .footer {
   width: 100%;
   background-color: rgba(95, 95, 95, 0.1);
@@ -125,29 +157,9 @@ h3 {
   grid-row-gap: 0px;
   color: black;
 }
+/* footer's box */
   .about-text { grid-area: 2 / 2 / 5 / 5; }
   .other { grid-area: 2 / 7 / 5 / 10; 
-  line-height: 30px;
-
-  }
+  line-height: 30px;}
   .copyright { grid-area: 6 / 3 / 7 / 9; }
-
-  .two-column {
-    display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  margin-top: 50px;
-  margin-bottom: 50px;
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-    }
-    
-  .column1 { grid-area: 1 / 2 / 3 / 4; }
-  .column2 { grid-area: 1 / 5 / 3 / 7; }
-
-  .column-image{
-    aspect-ratio: 1 / 1;
-    width: 400px;
-    height: auto;
-    text-align: center;
-  }
+/* ------------------------------------------------------------------------- */
