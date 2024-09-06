@@ -29,7 +29,8 @@ body {
   .div10 { grid-area: 1 / 24 / 2 / 25; }
   .div11 { grid-area: 1 / 26 / 2 / 27; }
   .div12 { grid-area: 1 / 28 / 2 / 29; }
-  .icon , .div2, .div3 , .div4 , .div5 , .div6 , .div7, .div8, .div9, .div10, .div11, .div12{
+  .icon , .div2, .div3 , .div4 , .div5 , .div6 , .div7, .div8, 
+  .div9, .div10, .div11, .div12{
     text-align: center;
     font-size: 120%;
     border: 2px double rgb(255, 255 , 255);
@@ -65,7 +66,8 @@ body {
   transform: translate(-50%, -50%); 
   /*I used top, left and transform:translate() to allign the text to the absolute center */
   color: #dee4dd;
-  text-shadow: -1px -1px 3px rgb(118, 47, 37), 1px -1px 3px rgb(118, 47, 37), 1px 1px 3px rgb(118, 47, 37),
+  text-shadow: -1px -1px 3px rgb(118, 47, 37),
+   1px -1px 3px rgb(118, 47, 37), 1px 1px 3px rgb(118, 47, 37),
   1px 1px 3px rgb(118, 47, 37); 
   padding: 10px 20px; 
   text-align: center;
@@ -89,7 +91,7 @@ body {
   padding: 10px;
 }
 /* three column box */
-.thermal-valley, .mud-pool ,.pohutu-geyser,.weaving-school,.carving-school,.wooden-club {
+.three-column-box {
   background-color: rgba(217, 217, 217, 0.8);
   border: 1px solid rgba(0, 0, 0, 0);
   padding: 10px;
