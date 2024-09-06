@@ -14,7 +14,7 @@ body {
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  background-color: rgba(95, 95, 95, 0.1)
+  background-color: rgba(95, 95, 95, 0.1);
   }
   /* top bar button */
   .icon { grid-area: 1 / 2 / 2 / 4; }
