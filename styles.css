@@ -45,12 +45,17 @@ body {
 .hero-container {
   position: relative;
   display: inline-block;
+  background-color: black; /*I set the background color to black */
+  /*so when the image's opcaity is lowered, it will appeared darken*/
 }
 
 .hero-container img {
   display: block;
   width: 1920px;
   height: auto;
+  /*make the image opacity lower and use a black background to darken it*/
+  opacity: 0.7;
+  
 }
 /* hero text use a different font than the rest of the website */
 .hero-text {
